@@ -1,0 +1,15 @@
+{
+  "name": "createschema",
+  "version": "1.0.0",
+  "description": "Creates a Schema",
+  "main": "CreateShipmentFulfilledTopic.js",
+  "scripts": {
+    "start": "node CreateShipmentFulfilledTopic"
+  },
+  "author": "Kevin Croke",
+  "license": "ISC",
+  "dependencies": {
+    "node-rdkafka": "^2.16.1",
+    "request": "^2.88.2"
+  }
+}
