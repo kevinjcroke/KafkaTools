@@ -63,6 +63,7 @@ const topicsAndSchemas = [
     // Add more topics and schemas here...
 ];
 
+// Create Topics
 // If brokers are defined then create the topics
 if (config.brokers && config.brokers.length > 0) {
     const adminClient = Kafka.AdminClient.create({
@@ -86,6 +87,7 @@ if (config.brokers && config.brokers.length > 0) {
     });
 }
 
+// Register Schemas
 topicsAndSchemas.forEach((item) => {
     item.schemas.forEach((schemaDefinition) => {
         const schemaName = `${config.topicPrefix}${schemaDefinition.schemaSuffix}`;
