@@ -37,7 +37,8 @@ if (!environments[env]) {
 const config = environments[env];
 
 // Note: This tool is designed to create a topic and schema locally. For any other environment
-//      only the schema will be created.
+//      only the schema will be created. To create topics remotely use http://kafka-manager.kube.sslocal.com/, click the cluster and then Topic>Create.
+//      Make sure you use a replication factor of 3.
 const topicsAndSchemas = [
     {
         topicSuffix: '_fulfillment_move_to_shipped_v1',
